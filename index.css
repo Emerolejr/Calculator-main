@@ -1,0 +1,183 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    padding:0;
+    margin:0;
+    font-size: 2rem;
+    font-weight:700;
+    font-family:sans-serif;
+    background-color:hsl(0, 0%, 90%);
+    color:hsl(60, 10%, 19%);
+    
+}
+
+
+*,::before,*::after{
+    padding:0;
+    margin:0;
+}
+
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:space-between;
+    position:relative;
+    height:95vh;
+    width:90%;
+}
+
+
+.top{
+    height:7%;
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.theme-toggle{
+    display:flex;
+    width:12rem;
+    justify-content:space-between;
+}
+.theme-toggle .theme{
+    position:relative;
+    font-size:1rem;
+    left:2rem;
+    top:1rem;
+}
+
+.toggle{
+    width:100px;
+    height:40px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+
+.toggle div{
+    display:flex;
+    justify-content:space-around;
+    height:10px;
+    font-size:10px;
+    width:80px;
+    margin:auto;
+}
+
+label{
+    width:80px;
+    height:28px;
+    background-color:  hsl(0, 5%, 81%);
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    border-radius:20px;
+    margin:auto;
+}
+
+label .spot{
+    height:25px;
+    background-color:inherit;
+    width:25px;
+    border-radius:25px;
+}
+
+label .slider{
+    width:20px;
+    height:20px;
+    border-radius:20px;
+    background-color:hsl(25, 98%, 40%);
+    position:absolute;
+    left:30px;
+    transition:all 0.5s;
+}
+
+.screen{
+    height:15%;
+    width:90%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    font-size:3rem;
+    padding:0 1rem;
+    box-sizing: border-box;
+    border-radius:0.3rem;
+    background-color: hsl(0, 0%, 93%);
+}
+
+
+.buttons{
+    height:70%;
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-evenly;
+    border-radius:0.3rem;
+    background-color: hsl(0, 5%, 81%);
+}
+
+
+
+.row{
+    display:flex;
+    flex-direction:row;
+    width:95%;
+    height:15%;
+    justify-content: space-evenly;
+}
+
+
+.row div{
+    width:18%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0.3rem;
+    background-color: hsl(45, 7%, 89%);
+    box-shadow:1px 5px 5px 0px hsl(35, 11%, 61%);
+    cursor:pointer;
+}
+
+
+.row.fifth{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+.row .equal{
+    background-color:hsl(25, 98%, 40%);
+    box-shadow:1px 5px 5px 0px  hsl(25, 99%, 27%);
+    color:hsl(0, 0%, 100%);
+}
+
+
+.row .reset, .row .del{
+    background-color:hsl(185, 42%, 37%);
+    box-shadow:1px 5px 5px 0px  hsl(185, 58%, 25%);
+    color:hsl(0, 0%, 100%);
+}
+
+
+.row.fifth div{
+    width:42%;
+}
+
+
+
